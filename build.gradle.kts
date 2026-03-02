@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+
 plugins {
     kotlin("jvm") version "2.3.20-Beta2" apply false
     id("com.gradleup.shadow") version "8.3.0" apply false
@@ -17,7 +19,7 @@ subprojects {
         }
     }
 
-    kotlin {
+    extensions.configure<KotlinJvmProjectExtension> {
         jvmToolchain(21)
     }
 }
