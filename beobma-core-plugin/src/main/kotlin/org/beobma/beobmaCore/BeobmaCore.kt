@@ -16,7 +16,8 @@ class BeobmaCore : JavaPlugin() {
             ServicePriority.Normal,
         )
 
-        logger.info("CoreMessageApi service registered.")
+        logger.info(api.formatInfo("CoreMessageApi service registered."))
+        logger.info(api.applyPlaceholders("{plugin} v{version} started", mapOf("plugin" to "BeobmaCore", "version" to pluginMeta.version)))
     }
 
     override fun onDisable() {
