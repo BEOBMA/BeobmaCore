@@ -1,4 +1,4 @@
 name: BeobmaCore
-version: '1.0-SNAPSHOT'
+version: '${version}'
 main: org.beobma.beobmaCore.BeobmaCore
 api-version: '1.21'
