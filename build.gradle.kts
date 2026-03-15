@@ -9,6 +9,8 @@ plugins {
 group = "org.beobma"
 version = "1.0-SNAPSHOT"
 
+val paperApiVersion = "1.21.11-R0.1-SNAPSHOT"
+
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
 
@@ -18,6 +20,8 @@ subprojects {
             name = "papermc-repo"
         }
     }
+
+    extra["paperApiVersion"] = paperApiVersion
 
     extensions.configure<KotlinJvmProjectExtension> {
         jvmToolchain(21)
