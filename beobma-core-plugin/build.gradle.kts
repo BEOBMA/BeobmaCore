@@ -1,4 +1,4 @@
-val paperApiVersion: String by rootProject.extra
+val paperApiVersion: String by project
 
 plugins {
     id("com.gradleup.shadow")
