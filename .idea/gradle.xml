@@ -8,6 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/beobma-core-plugin" />
+            <option value="$PROJECT_DIR$/core-api" />
+            <option value="$PROJECT_DIR$/core-impl" />
           </set>
         </option>
       </GradleProjectSettings>
