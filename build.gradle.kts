@@ -9,6 +9,7 @@ plugins {
 group = "org.beobma"
 version = "1.0-SNAPSHOT"
 
+
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
 
@@ -18,6 +19,7 @@ subprojects {
             name = "papermc-repo"
         }
     }
+
 
     extensions.configure<KotlinJvmProjectExtension> {
         jvmToolchain(21)

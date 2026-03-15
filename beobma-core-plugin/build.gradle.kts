@@ -1,10 +1,12 @@
+val paperApiVersion: String by project
+
 plugins {
     id("com.gradleup.shadow")
     id("xyz.jpenilla.run-paper")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:$paperApiVersion")
     implementation(project(":core-api"))
     implementation(project(":core-impl"))
 }
